@@ -27,11 +27,13 @@ Pe Windows (PowerShell): `$env:LEII_DB="sqlite"; php install.php; php -S localho
 
 | Cont | Email | Parolă | Rol | Grupe |
 |---|---|---|---|---|
-| Adi Nedelea (patron și antrenor, UEFA B juniori) | adi@leii.ro | admin123 | administrator | 2012–2016 (vede toate) |
-| Claudiu Mirea (antrenor, UEFA C) | claudiu@leii.ro | antrenor123 | antrenor | 2017–2020 |
+| Adi Nedelea (patron și antrenor, UEFA B juniori) | adi@leii.ro | admin123 | administrator | 2015–2020 (vede toate) |
+| Claudiu Mirea (antrenor și preparator fizic, UEFA C) | claudiu@leii.ro | antrenor123 | antrenor | 2012–2014 |
+| Daniel Vasile (antrenor de portari) | daniel@leii.ro | antrenor123 | antrenor | – (antrenamente individuale) |
 
-Grupele sunt pe ani de naștere, 2012–2020. Împărțirea grupelor între antrenori, jucătorii, meciurile și
-sponsorii sunt date demonstrative și se modifică din `install.php`. Sigla clubului este în `assets/img/logo.jpg`.
+Grupele sunt pe ani de naștere, 2012–2020. Jucătorii, datele și scorurile meciurilor sunt demonstrative și se modifică
+din `install.php`. Adversarii sunt echipe reale din competițiile de copii AJF Dolj (sezon 2026/2027), iar sponsorii
+(Auto Pyo, King Rolls) sunt cei reali, cu logourile în `assets/img/sponsors/`. Sigla clubului este în `assets/img/logo.jpg`.
 
 ## Ce este implementat
 
@@ -47,6 +49,9 @@ sponsorii sunt date demonstrative și se modifică din `install.php`. Sigla club
 | FR-09 / UC-04 Gestionare jucători | `admin/players.php` |
 | FR-10 / UC-05 Meciuri și rezultate | `admin/matches.php` |
 | FR-14 Mesaje de contact | `admin/messages.php` |
+| Înscriere copii (formular public + cereri în panoul staff) | `inscriere.php`, `admin/enrollments.php` |
+| Antrenamente individuale 6–19 ani (prezentare + programare) | `individual.php`, `includes/enrollment.php` |
+| Pagina principală: grupe U7–U15, rezultate, bază, întrebări frecvente | `index.php` |
 
 Neincluse în prototip (planificate pentru versiunea completă): galeria foto (FR-05, FR-12),
 editarea știrilor și sponsorilor din interfață (parte din FR-11), gestionarea conturilor (FR-13).
